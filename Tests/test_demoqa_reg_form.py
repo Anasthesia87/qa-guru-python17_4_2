@@ -7,4 +7,4 @@ def test_student_registration_form():
     browser.open('/automation-practice-form')
 
     #---------------
-    browser.element('[id=firstName]').should(match.blank).type('Nastya')
+    browser.element('#firstName').should(match.blank).type('Nastya').press_enter()
